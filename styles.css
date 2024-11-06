@@ -71,6 +71,26 @@ select, input[type="text"] {
     text-align: center;
     background-color: #2e8b57;
 }
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns: one for times, one for schedule slots */
+    gap: 1px;
+    background-color: #2e8b57;
+}
+
+
+.schedule div {
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+}
+
+.schedule .time {
+    background-color: #2e8b57;
+    color: white;
+    font-weight: bold;
+}
 
 .week-schedule table {
     width: 100%;
@@ -83,4 +103,21 @@ select, input[type="text"] {
     padding: 10px;
     background-color: #006400;
     color: white;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #008000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #004d00;
 }
