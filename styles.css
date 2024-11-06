@@ -1,0 +1,9 @@
+body {
+    background-image: url('https://tvn.md/wp-content/uploads/2023/03/1-19-920x615-1-696x407.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    background-attachment: fixed; 
+    color: white;  
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
