@@ -1,123 +1,176 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
-body {
-    background-image: url('https://tvn.md/wp-content/uploads/2023/03/1-19-920x615-1-696x407.jpg'); 
-    background-size: cover;  
-    background-position: center;  
-    background-attachment: fixed; 
-    color: white;  
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+section  {
+    margin-top: 20px;
 }
 
-header {
+body {
+    background: lightcoral;
+    display: flex;
+    justify-content: center;
+    background: url('https://i.simpalsmedia.com/point.md/news/809x456/93869a4295512069b4ae66e876b46bbe.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    background: white;
+    color: gray;
+    height: 60px;
+    width: 450px;
+    align-content: center;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: white;
+}
+
+.controls h3 {
+    background: #25975A;
+    height: 40px;
+    width: 120px;
+    align-content: center;
+    text-align: center;
 }
 
 .controls {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.tab {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.tab.active {
-    background-color: darkgreen;
-}
-
-.student-mode {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-select, input[type="text"] {
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-}
-.schedule {
-    margin: 20px 0;
-}
-
-.schedule table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.schedule th, .schedule td {
-    border: 1px solid white;
-    padding: 10px;
-    text-align: center;
-    background-color: #2e8b57;
-}
-.schedule {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns: one for times, one for schedule slots */
-    gap: 1px;
-    background-color: #2e8b57;
-}
-
-
-.schedule div {
-    padding: 10px;
-    background-color: white;
-    color: #333;
-    text-align: center;
-}
-
-.schedule .time {
-    background-color: #2e8b57;
-    color: white;
-    font-weight: bold;
-}
-
-.week-schedule table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.week-schedule th, .week-schedule td {
-    border: 1px solid white;
-    padding: 10px;
-    background-color: #006400;
-    color: white;
-}
-.actions {
-    display: flex;
     justify-content: space-between;
 }
 
-.actions button {
-    padding: 10px 20px;
+.search-zone,
+#week-of-year {
     border: none;
-    background-color: #008000;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+    height: 40px;
+    width: 100%;
 }
 
-.actions button:hover {
-    background-color: #004d00;
+.instructions {
+    /* height: 120px; */
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.instructions h5 {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+
+#week-of-year,
+#day-of-week {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #666;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 100%;
+}
+
+#day-of-week option {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.result-zone {
+    background: white;
+    height: 100px;
+    width: 100%;
+}
+
+.buttons {
+    height: 20px;
+}
+
+.buttons a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    border-radius: 3px;
+    background: black;
+    padding: 5px 10px ;
+}
+
+.buttons a:first-child {
+    background: #25975A;
+}
+.buttons a:nth-child(2) {
+    background: #f0506e;
+}
+.buttons a:last-child {
+    background: rgb(123, 70, 105);
+}
+
+#info-zone {
+    align-content: center;
+    background: #edfbf6;
+    color: #32d296;
+    font-size: 16px;
+    padding: 15px 30px 15px 15px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    height: 200px;
+}
+
+tr th:first-child,
+thead th:not(:first-child) {
+    color: white;
+    background: #25975A;
+    border: 1px solid white;
+}
+
+#shedule1 tr th:first-child {
+    width: 120px;
+}
+
+#shedule1 thead th:not(:first-child) {
+    width: 50;
+}
+
+tbody tr th:not(:first-child) {
+    background: white;
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* section:not(:first-child) {
+    margin-left: 40px;
+}
+
+#shedule2 tbody tr th:first-child {
+    width: 140px;
+    height: 95px;
+}
+
+#shedule2 tbody tr th:first-child p {
+    font-size: 12px;
+    margin: 0;
+}
+
+#shedule2 tbody tr th:not(:first-child) {
+    width: 565px;
+}
+
