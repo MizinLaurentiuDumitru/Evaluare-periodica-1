@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 body {
     background-image: url('https://tvn.md/wp-content/uploads/2023/03/1-19-920x615-1-696x407.jpg'); 
     background-size: cover;  
@@ -6,4 +12,75 @@ body {
     color: white;  
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: darkgreen;
+}
+
+.student-mode {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+select, input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.schedule {
+    margin: 20px 0;
+}
+
+.schedule table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule th, .schedule td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e8b57;
+}
+
+.week-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.week-schedule th, .week-schedule td {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: #006400;
+    color: white;
 }
